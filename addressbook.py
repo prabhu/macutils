@@ -68,7 +68,7 @@ def _clist(slist):
 
 def _getVal(tmpval):
     """
-    Extract value from unicode or Date object.
+    Extract value from unicode, Date or Dictionary object.
     """
     aval = None
     if type(tmpval) == objc.pyobjc_unicode:
