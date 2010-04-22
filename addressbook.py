@@ -78,13 +78,3 @@ def _getVal(tmpval):
     elif type(tmpval) == NSCFDictionary:
         aval = dict([(k.lower(), tmpval[k]) for k in tmpval.keys()])
     return aval
-
-def main():
-    #print all()
-    #print groups()
-    #print me()
-    #print getByUID('B50984C8-FEAC-4D6A-8B77-E271DB729A8E:ABPerson')
-    
-if __name__ == '__main__':
-	main()
-
