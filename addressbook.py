@@ -28,6 +28,24 @@ def all():
     """
     return _clist(getAddressBook().people())
 
+def groups():
+    """
+    Return groups
+    """
+    return _clist(getAddressBook().groups())
+
+def me():
+    """
+    Returns the current logged in user.
+    """
+    return _clist([getAddressBook().me()])[0]
+
+def getByUID(uid):
+    """
+    Returns a person or group by uid.
+    """
+    return _clist([getAddressBook().recordForUniqueId_(uid)])[0]
+
 def _clist(slist):
     """
     Method to convert NSArray to python list
@@ -48,18 +66,6 @@ def _clist(slist):
         retList.append(aobj)
     return retList
 
-def groups():
-    """
-    Return groups
-    """
-    return _clist(getAddressBook().groups())
-
-def me():
-    """
-    Returns the current logged in user.
-    """
-    return _clist([getAddressBook().me()])[0]
-    
 def _getVal(tmpval):
     """
     Extract value from unicode or Date object.
@@ -76,7 +82,8 @@ def _getVal(tmpval):
 def main():
     #print all()
     #print groups()
-    print me()
+    #print me()
+    #print getByUID('B50984C8-FEAC-4D6A-8B77-E271DB729A8E:ABPerson')
     
 if __name__ == '__main__':
 	main()
