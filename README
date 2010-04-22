@@ -1,0 +1,11 @@
+addressbook
+------------
+
+Python wrapper around Mac OSX Address Book.
+
+Requirements
+-------------
+pyobjc (Tested with 2.2)
+
+easy_install pyobjc
+
