@@ -1,7 +1,7 @@
-addressbook
-------------
+macutils
+---------
 
-Python wrapper around Mac OSX Address Book.
+Package containing mac related utils to be used in python modules.
 
 Requirements
 -------------
@@ -9,3 +9,16 @@ pyobjc (Tested with 2.2)
 
 easy_install pyobjc
 
+
+CONTENTS
+=========
+
+* addressbook.py
+
+    Python wrapper around Mac OSX Address Book.
+
+Usage
+-----
+from macutils import addressbook
+
+print addressbook.all()
